@@ -1,7 +1,6 @@
-import React, { useCallback } from 'react';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
   
+import SkillsSection from './components /skills';
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#121212] text-[#F3F4F6] flex flex-col">
@@ -38,30 +37,9 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <main className="relative flex flex-col items-center justify-center flex-1 px-6 text-center overflow-hidden">
-        {/* Particles Background */}
-        <div className="absolute inset-0 -z-10 w-full h-full pointer-events-none">
-          <Particles
-            id="tsparticles"
-            options={{
-              fpsLimit: 60,
-              fullScreen: true,
-              particles: {
-                number: { value: 60, density: { enable: true, area: 800 } },
-                color: { value: ['#3B82F6', '#60A5FA', '#93C5FD'] },
-                links: { enable: true, color: '#1E3A8A', distance: 120, opacity: 0.3, width: 1 },
-                move: { enable: true, speed: 0.6, outModes: { default: 'out' } },
-                opacity: { value: 0.5 },
-                size: { value: { min: 1, max: 3 } },
-              },
-              interactivity: {
-                events: { onHover: { enable: false }, onClick: { enable: false }, resize: true },
-              },
-              detectRetina: true,
-            }}
-          />
-        </div>
+        
         {/* Profile Image Placeholder */}
-        <div className="w-48 h-48 rounded-full bg-gradient-to-br from-[#3B82F6] to-[#1E40AF] flex items-center justify-center mb-8 shadow-2xl">
+        <div className="mt-12 w-48 h-48 rounded-full bg-gradient-to-br from-[#3B82F6] to-[#1E40AF] flex items-center justify-center mb-8 shadow-2xl">
           <span className="text-white text-4xl font-bold">MS</span>
         </div>
         
@@ -84,6 +62,8 @@ export default function LandingPage() {
             Contact Me
           </button>
         </div>
+        {/* Skills Section */}
+        <SkillsSection />
       </main>
 
       {/* Footer */}
