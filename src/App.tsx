@@ -1,5 +1,6 @@
   
 import SkillsSection from './components /skills';
+import TimelineSection from './components /timeline';
 
 export default function LandingPage() {
   return (
@@ -64,6 +65,7 @@ export default function LandingPage() {
         </div>
         {/* Skills Section */}
         <SkillsSection />
+        <TimelineSection/>
       </main>
 
       {/* Footer */}
