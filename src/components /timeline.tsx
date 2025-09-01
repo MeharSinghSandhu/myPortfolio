@@ -10,22 +10,22 @@ const experiences: Experience[] = [
   {
     role: "Software Engineering Intern",
     company: "JK Exim",
-    location: "Toronto, ON",
-    period: "May 2024 - Aug 2024",
+    location: "Remote",
+    period: "Sep 2024 - Dec 2024",
     description: "Developed full-stack web applications using React and Node.js, implemented CI/CD pipelines, and collaborated with cross-functional teams to deliver high-quality software solutions."
   },
   {
     role: "Project Curriculum Designer",
     company: "University of Guelph",
     location: "Guelph, ON",
-    period: "Jan 2024 - Apr 2024",
+    period: "May 2024 - Aug 2024",
     description: "Designed and developed educational curriculum for software engineering projects, created interactive learning materials, and mentored students in programming fundamentals."
   },
   {
-    role: "Frontend Developer",
-    company: "StartupHub Inc.",
+    role: "Student Accessibility Services - Course Interpreter",
+    company: "University of Guelph",
     location: "Remote",
-    period: "Sep 2023 - Dec 2023",
+    period: "Jan 2025 - Current",
     description: "Built responsive user interfaces using React and TypeScript, optimized application performance, and implemented modern UI/UX design principles."
   }
 ];
