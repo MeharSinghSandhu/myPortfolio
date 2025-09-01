@@ -24,7 +24,7 @@ const experiences: Experience[] = [
   {
     role: "Student Accessibility Services - Course Interpreter",
     company: "University of Guelph",
-    location: "Remote",
+    location: "Guelph, ON",
     period: "Jan 2025 - Current",
     description: "Built responsive user interfaces using React and TypeScript, optimized application performance, and implemented modern UI/UX design principles."
   }
