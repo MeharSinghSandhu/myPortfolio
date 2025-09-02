@@ -1,4 +1,7 @@
 import React from 'react';
+import eightBallImage from '../assets/pool.jpeg';
+import aslImage from '../assets/ASL.jpeg';
+import doctorAiImage from '../assets/doctorai.jpeg';
 
 interface Project {
   id: number;
@@ -26,7 +29,7 @@ const projects: Project[] = [
     id: 2,
     title: "FULL STACK SIGN LANGUAGE TRANSLATOR",
     description: "Built a real-time bidirectional translator that converts speech to ASL animations and ASL gestures to speech.",
-    image: "/images/taskapp.jpg",
+    image: aslImage,
     technologies: ["Python(Flask)", "React-Native","AWS EC2/S3", "MediaPipe Hands", "Google Gemini", "Open CV", "Flask - CORS"],
     github: "https://github.com/username/taskapp",
     prize: " 3rd Prize",
@@ -36,7 +39,7 @@ const projects: Project[] = [
     id: 3,
     title: "FULL STACK AI DOCTOR CONSULTANT",
     description: "A virtual doctor web app that diagnoses symptoms through AI conversations and triggers emergency alerts when needed whether its for booking appointments or emergencies.",
-    image: "/images/weather.jpg",
+    image: doctorAiImage,
     technologies: ["Python", "Typescript", "Tailwind CSS","Firebase","Gemini API's", "Twilio"],
     github: "https://github.com/username/weather",
     event: "Wilfred Laurier's Hack Canada"
@@ -45,7 +48,7 @@ const projects: Project[] = [
     id: 4,
     title: "8 BALL POOL GAME",
     description: "A multiplayer pool game with realistic physics, blending a custom C engine with a smooth Python-MySQL backend..",
-    image: "/images/portfolio.jpg",
+    image: eightBallImage,
     technologies: ["C", "Python", "MySQL", "HTML", "CSS","JQuery","AJAX"],
     github: "https://github.com/username/portfolio"
   },
@@ -91,12 +94,20 @@ const Projects: React.FC = () => {
             >
               {/* Project Image */}
               <div className="mb-6">
-                <div className="w-full h-64 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="text-6xl mb-2">📱</div>
-                    <p className="text-sm opacity-80">Project Preview</p>
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className={`w-full h-64 ${project.id === 2 ? 'object-contain bg-black p-2' : 'object-cover'} rounded-xl`}
+                  />
+                ) : (
+                  <div className="w-full h-64 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="text-6xl mb-2">📱</div>
+                      <p className="text-sm opacity-80">Project Preview</p>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
 
               {/* Project Content */}
