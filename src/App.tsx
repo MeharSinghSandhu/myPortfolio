@@ -67,9 +67,9 @@ export default function LandingPage() {
         </div>
         {/* Skills Section */}
         <SkillsSection />
-        <TimelineSection/>
-        <ProjectsSection/>
-        <ContactSection/>
+        <TimelineSection />
+        <ProjectsSection />
+        <ContactSection />
       </main>
 
       {/* Footer */}

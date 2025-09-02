@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@splinetool/react-spline": "^4.1.0",
     "aws-sdk": "^2.1692.0",
     "classnames": "^2.5.1",

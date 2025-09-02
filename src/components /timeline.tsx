@@ -32,13 +32,20 @@ const experiences: Experience[] = [
 
 export default function TimelineSection() {
   return (
-    <section id="experience" className="mt-24 w-full px-6 py-16">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white">
-          Professional Experience
-        </h2>
+    <section id="experience" className="min-h-screen py-15 px-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-white mb-4 flex items-center justify-center gap-3">
+            <span className="text-4xl">💼</span>
+            PROFESSIONAL EXPERIENCE
+          </h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            My journey in software engineering, from internships to impactful projects that shaped my technical expertise.
+          </p>
+        </div>
         
-        <div className="relative">
+        <div className="relative max-w-4xl mx-auto">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#3B82F6] to-[#22D3EE] border-dashed border-l-2 border-[#3B82F6]"></div>
           

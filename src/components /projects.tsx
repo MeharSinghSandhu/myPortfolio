@@ -69,7 +69,7 @@ const projects: Project[] = [
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="min-h-screen bg-gray-900 py-20 px-4">
+    <section id="projects" className="min-h-screen mt-44 py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -118,16 +118,17 @@ const Projects: React.FC = () => {
 
                 {/* Prize and Event Info */}
                 {(project.prize || project.event) && (
-                  <div className="pt-4 space-y-2">
+                  <div className="pt-4 space-y-3">
+                    {project.event && (
+                      <div className="flex items-center gap-2 text-blue-300 text-sm">
+                        <span>📍</span>
+                        <span>{project.event}</span>
+                      </div>
+                    )}
                     {project.prize && (
                       <div className="flex items-center gap-2">
                         <span className="text-2xl">{project.prize.includes("1st") ? "🥇" : "🥉"}</span>
                         <span className="text-yellow-400 font-semibold text-lg">{project.prize}</span>
-                      </div>
-                    )}
-                    {project.event && (
-                      <div className="text-blue-300 text-sm">
-                        📍 {project.event}
                       </div>
                     )}
                   </div>

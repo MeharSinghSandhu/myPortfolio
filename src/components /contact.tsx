@@ -4,7 +4,7 @@ import animationData from "../assets/paperplane-animation.json";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="min-h-screen bg-gray-900 py-20 px-4">
+    <section id="contact" className="min-h-screen mt-44 py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
